@@ -1,0 +1,13 @@
+@media all and (max-width: 768px) {
+  section {
+    width: 100vh
+  }
+}
+
+@media all and (max-width: 500px) {
+  
+
+  .cont01 h2 .tit {
+    font-size: 50px;
+  }
+}
