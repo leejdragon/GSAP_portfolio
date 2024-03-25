@@ -1,13 +1,46 @@
 @media all and (max-width: 768px) {
-  section {
-    width: 100vh
-  }
+ 
 }
 
 @media all and (max-width: 500px) {
   
+  .cont03 .logo_wrap .logo_img {
+    width: 120px;
+  }
 
   .cont01 h2 .tit {
     font-size: 50px;
+    text-align: center;
+  }
+  
+  .cont02 .textBox {
+    font-size: 50px;
+  }
+
+  .cont03 .cont03__tit {
+    font-size: 50px;
+  }
+
+  .cont04 .cont04__tit {
+    font-size: 50px;
+  }
+
+  .cont04 .img_wrap img {
+    width: 100%;
+  }
+
+  .cont05 .cont05__tit {
+    font-size: 50px;
+  }
+
+  .cont05 .reason {
+    display: flex;
+    flex-direction: column;
+  }
+  .cont05 p {
+    font-size: 30px;
+    line-height: 1.5;
+    height: 185px;
+    text-align: center;
   }
 }
