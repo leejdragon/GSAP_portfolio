@@ -54,8 +54,8 @@ gsap.from(".logo_img", {
     trigger: '.cont03 h2',
     start:'top center',
     end: 'bottom 50%',
-    scrub: 1,
-    markers: true
+    scrub: 1
+    // markers: true
   },
 
   duration: 1,
@@ -86,7 +86,7 @@ ScrollTrigger.create({
     end: "+=2000",
     scrub: true,
     pin: true,
-    markers: true,
+    // markers: true,
     anticipatePin: 1,
     stagger: {
       amount:8,
