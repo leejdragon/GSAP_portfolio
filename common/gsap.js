@@ -157,3 +157,87 @@ function setActive(link) {
     links.forEach(el => el.classList.remove("active"));
     link.classList.add("active");
 }
+
+
+
+
+
+// const curtain = gsap.timeline();
+// curtain.to(".curtain01", { y: "100%", duration: 1 }, 0)
+//         .to(".curtain02", { y: "-100%", duration: 1 }, 0)
+//         .fromTo(
+//     ".cont06",
+//     { backgroundSize: "100%" },
+//     { backgroundSize: "150%", duration: 1 },
+//     0
+//   )
+
+// ScrollTrigger.create({
+//     animation: curtain,
+//     trigger: ".cont06",
+//     start: "top top",
+//     end: "+=1000",
+//     scrub: 3,
+//     pin: true,
+//     markers: true,
+//     anticipatePin: 1
+// });
+
+gsap.to("#info > .vCurtain", {
+  scrollTrigger: {
+    trigger: ".cont06",
+    start: "top 75%",
+    toggleActions: "play reset play reverse",
+  },
+  duration: 5,
+  "--left": "0%",
+  "--right": "100%"
+});
+
+
+
+
+
+
+// gsap 반응형 코드
+// ScrollTrigger.matchMedia({
+//   "(max-width: 500px)": function() {
+
+//     gsap.to("#info > .vCurtain", {
+//       scrollTrigger: {
+//         trigger: ".cont06",
+//         start: "top 75%",
+//         toggleActions: "play reset play reverse",
+//       },
+//       duration: 3,
+//       "--left": "0%",
+//       "--right": "10%"
+//     });
+//   },
+// });
+
+
+
+
+
+
+
+
+let tl = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".cont07",
+		// markers: true,
+		start: "top top",
+		end: "+=2000",
+		pin: true,
+		scrub: 1
+	}
+})
+tl.to(".cont07", {"--target-1": "0%", ease: "none"})
+
+
+
+
+
+
+

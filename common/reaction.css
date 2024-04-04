@@ -4,8 +4,8 @@
 
 @media all and (max-width: 500px) {
   
-  .cont03 .logo_wrap .logo_img {
-    width: 120px;
+  .cont01 {
+    height: 600px;
   }
 
   .cont01 h2 .tit {
@@ -13,8 +13,28 @@
     text-align: center;
   }
   
+  .cont02 {
+    height: 600px;
+  }
   .cont02 .textBox {
     font-size: 50px;
+  }
+
+  .cont02 .textBox p {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .cont03 {
+    height: 700px;
+    grid-template-rows: repeat(3, 1fr);
+    display: grid;
+  }
+
+  .cont03 .logo_wrap .logo_img {
+    width: 120px;
+    width: 95px;
+    padding: 20px;
   }
 
   .cont03 .cont03__tit {
@@ -42,5 +62,33 @@
     line-height: 1.5;
     height: 185px;
     text-align: center;
+  }
+
+  .cont06 .cont06__tit {
+    font-size: 50px;
+  }
+
+  .cont07 {
+    font-size: 5.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cont07 .cont07__tit {
+    font-size: 50px;
+    display: none;
+  }
+
+  #parallax__nav {
+    position: fixed;
+    right: 50px;
+    top: 20px;
+  }
+
+  #parallax__nav li a {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
   }
 }
